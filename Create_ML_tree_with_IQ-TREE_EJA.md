@@ -4,7 +4,8 @@ Jason Toy
 2025-04-24
 
 
-## Convert pruned VCF to aligned sequence file
+## Convert pruned VCF to aligned sequence file using vcf2phylip v2.8
+Download script from https://github.com/edgardomortiz/vcf2phylip, create a new conda environment for it. Then run:
 ```bash
 conda activate /hb/groups/bernardi_lab/programs/vcf2phylip
 python ../programs/vcf2phylipdir/vcf2phylip.py -i 8-Embiotoca.pruned.vcf.gz --output-folder aligned_seqs --fasta
@@ -27,4 +28,4 @@ iqtree2 -s 8-Embiotoca.pruned.min4.fasta.varsites.phy --seqtype DNA -m GTR+ASC+G
 iqtree2 -s 8-Embiotoca.pruned.min4.fasta.varsites.phy --seqtype DNA -m MFP -B 1000 -T 34
 ```
 
-## Create version of tree where low-support nodes are collapsed
+
