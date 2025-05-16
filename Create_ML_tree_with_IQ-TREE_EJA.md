@@ -28,4 +28,10 @@ iqtree2 -s 8-Embiotoca.pruned.min4.fasta.varsites.phy --seqtype DNA -m GTR+ASC+G
 iqtree2 -s 8-Embiotoca.pruned.min4.fasta.varsites.phy --seqtype DNA -m MFP -B 1000 -T 34
 ```
 
+Best model according to BIC was TVMe+ASC+R5.
 
+
+## Infer root without an outgroup
+```bash
+iqtree2 -s 8-Embiotoca.pruned.min4.fasta.varsites.phy --seqtype DNA -m UNREST -B 1000 -T 34 --prefix nonrev_rooted
+```
