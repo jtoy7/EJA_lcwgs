@@ -35,3 +35,10 @@ Best model according to BIC was TVMe+ASC+R5.
 ```bash
 iqtree2 -s 8-Embiotoca.pruned.min4.fasta.varsites.phy --seqtype DNA -m UNREST -B 1000 -T 34 --prefix nonrev_rooted
 ```
+
+
+## Reroot tree at midpoint
+```bash
+iqtree2 -reroot 8-Embiotoca.pruned.min4.fasta.varsites.phy.iqtree --midpoint --pre MProoted
+iqtree2 -t 8-Embiotoca.pruned.min4.fasta.varsites.phy.iqtree -m MFP --root midpoint -pre MProoted
+```
